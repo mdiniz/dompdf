@@ -2220,7 +2220,8 @@ class Style
      */
     protected function _compute_background_repeat($val)
     {
-        return $val;
+        $keywords = ["repeat", "repeat-x" , "repeat-y", "no-repeat"];
+        return in_array($val, $keywords, true) ? $val : null;
     }
 
     /**
@@ -2230,7 +2231,8 @@ class Style
      */
     protected function _compute_background_attachment($val)
     {
-        return $val;
+        $keywords = ["scroll", "fixed"];
+        return in_array($val, $keywords, true) ? $val : null;
     }
 
     /**
