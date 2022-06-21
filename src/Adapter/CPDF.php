@@ -40,7 +40,7 @@ class CPDF implements Canvas
      * @var array
      */
     static $PAPER_SIZES = [
-        "custom-product" => [0, 0, 215.43, 39.69], // 76x14m
+        "custom-product" => [0, 0, 198.43, 42.52], // 70x15mm
         "custom-box" => [0, 0, 141.73, 85.04], // 50x30mm
         "4a0" => [0.0, 0.0, 4767.87, 6740.79],
         "2a0" => [0.0, 0.0, 3370.39, 4767.87],
